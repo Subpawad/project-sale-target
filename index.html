@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>หน้าแรก</title>
+
 </head>
 <body>
-    <nav>
-        <div class="container-nav">
-            <ul class="menu">
-                <li><a href="..">หน้าเเรก</a></li>
-                <li><a href="..">เพิ่มข้อมูล</a></li>
-                <li class="dropdown">
-                    <a href=".." class="dropbtn">เพิ่มเติม</a>
-                    <ul class="dropdown-content">
-                        <li><a href="..">ยอดขาย</a></li>
-                        <li><a href="..">เป้ายอดขาย</a></li>
-                    </ul>
-                </li>
-                <li><a href="..">การเฉลี่ยยอด</a></li>
-            </ul>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <div class="profile-icon"></div>
+                <p>ชื่อ - นามสกุล</p>
+                <p>ตำแหน่ง</p>
+            </div>
+            <div class="menu-item">หน้าแรก</div>
+            <div class="menu-item">เพิ่มข้อมูล</div>
+            <div class="menu-item">ยอดขาย</div>
+            <div class="menu-item">เป้ายอดขาย</div>
+            <div class="menu-item">การเฉลี่ยยอด</div>
         </div>
-    </nav>
+        <div class="content">
+            <h1>หน้าแรก</h1>
+            <div class="dropdown">
+                <select>
+                    <option>ปี2024</option>
+                    <option>ปี2023</option>
+                    <option>ปี2022</option>
+                </select>
+            </div>
+            <table>
+                <tr>
+                    <th>Target</th>
+                    <th>Actual</th>
+                    <th>Variance</th>
+                </tr>
+                <tr>
+                    <td>100,000</td>
+                    <td>80,000</td>
+                    <td>-20,000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
